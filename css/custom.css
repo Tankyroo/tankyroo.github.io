@@ -19,22 +19,20 @@ a:focus {
 
 p {
     font-size: 25px;
-    line-height: 2;
+    line-height: 1;
 }
 
 header {
 	
     position: relative;
-    width: 100%;
+    
     min-height: auto;
     text-align: center;
     color: #fff;
     background-image: url('../images/header.jpg');
-    background-position: bottom;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    /*background-position: bottom;*/
+	background-repeat: repeat;
+
 }
 
 header .header-content {
@@ -42,6 +40,16 @@ header .header-content {
     width: 100%;
     padding: 100px 15px 70px;
     text-align: center;
+
+}
+
+header .header-music{
+	position: relative;
+	text-align: center;
+	background-image: url('../images/lon.jpg');
+	margin-right: auto;
+    margin-left: auto;
+    max-width: 80%;
 }
 
 header .header-content .header-content-inner h1 {
@@ -76,6 +84,8 @@ header .header-content .header-content-inner p {
         margin-right: auto;
         margin-left: auto;
         max-width: 1000px;
+		float:right;
+		padding: 0px 200px 0px 0px;
     }
 
 	header .header-content .header-content-inner h1 {
@@ -88,6 +98,20 @@ header .header-content .header-content-inner p {
         max-width: 80%;
         font-size: 18px;
     }
+}
+
+#lon-image{
+
+	margin-left:auto;
+    width:250px;
+    height:250px;
+	position: absolute;
+    top: 25%;
+	padding: 0px 0px 0px 200px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+
 }
 
 .section-heading {
