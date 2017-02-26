@@ -439,11 +439,11 @@
 			margin: 0 0 1.25em 0;
 			color: #ffffff;
 			background: #629DD1;
-			width: 3em;
-			height: 3em;
+			width: 2em;
+			height: 2em;
 			font-size: 2em;
 			text-align: center;
-			line-height: 3em;
+			line-height: 1em;
 			border-radius: 100%;
 			box-shadow: 0 0 0 10px #fff, 0 0 0 11px rgba(144, 144, 144, 0.25);
 		}
