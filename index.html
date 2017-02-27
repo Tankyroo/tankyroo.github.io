@@ -24,17 +24,60 @@
 		<!-- Structured data -->
 		<script type="application/ld+json">
 		{
-			"@context": "schema.org",
-			"@type": "Music",
-			"url": "http://www.lordsofnoise.com",
-			"contactPoint": [{
-				"@type": "ContactPoint",
-				"email": "lordsofnoise@gmail.com",
-				"contactType": "email"
-			}]
+		  "@context": "http://schema.org",
+		  "@type": "MusicAlbum",
+		  "name": "The Deep End EP",
+		  "byArtist": {
+			"@type": "MusicGroup",
+			"name": "Lords of Noise"
+		  },
+		  "track": {
+			"@type": "ItemList",
+			"numberOfItems": 8,
+			"itemListElement": [
+			  {
+				"@type": "ListItem",
+				"position": 1,
+				"item": {
+				  "@type": "MusicRecording",
+				  "name": "The Deep End"
+				}
+			  },
+			  {
+				"@type": "ListItem",
+				"position": 2,
+				"item": {
+				  "@type": "MusicRecording",
+				  "name": "Wavin"
+				}
+			  },
+			  {
+				"@type": "ListItem",
+				"position": 3,
+				"item": {
+				  "@type": "MusicRecording",
+				  "name": "Supernatural"
+				}
+			  },
+			  {
+				"@type": "ListItem",
+				"position": 4,
+				"item": {
+					"@type": "MusicRecording",
+					"name": "Soaked to the Bone"
+				},
+				{
+				"@type": "ListItem",
+				"position": 5,
+				"item": {
+					"@type": "MusicRecording",
+					"name": "Red Sky"				
+				}
+			  }
+			]
+		  }
 		}
-</script>
-		
+		</script>		
 		<!-- Google Analytics -->
 		<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
