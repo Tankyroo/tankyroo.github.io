@@ -977,7 +977,12 @@
 	
 
 /* Banner */
-
+.videoWrapper{
+	
+	max-width: 560px;
+	max-height: 315px;
+	margin: auto;
+}
 	#banner {
 		background-color: #666666;
 		background-image: url("../images/banner.jpg");
