@@ -26,12 +26,48 @@
 		{
 		  "@context": "http://schema.org",
 		  "@type": "MusicAlbum",
-		  "thumbnailUrl": "http://lordsofnoise.com/images/lonoutnow.jpg",
+		  "url": "http://lordsofnoise.com/#listen",
 		  "name": "The Deep End EP",
+		  "description": "The Deep End is the debut EP of Nashville based artists 'Lords of Noise'",
 		  "byArtist": {
 			"@type": "MusicGroup",
 			"name": "Lords of Noise"
 		  },
+			"potentialAction": {
+					
+			"@type": "ListenAction",
+			"target": [
+			  {
+				"@type": "EntryPoint",
+				"urlTemplate": "http://lordsofnoise.com/#listen",
+				"actionPlatform": [
+				  "http://schema.org/DesktopWebPlatform",
+				  "http://schema.org/IOSPlatform",
+				  "http://schema.org/AndroidPlatform"
+				],
+				"InLanguage": "USD"
+			  },
+			  {
+				"@type": "EntryPoint",
+				"urlTemplate": "android-app://com.example.app/examplescheme/album/Artpop/?autoplay=true",
+				"actionPlatform": "http://schema.org/AndroidPlatform",
+				"InLanguage": "USD"
+			  }
+			],
+			"expectsAcceptanceOf": {
+			  "@type": "Offer",
+			  "eligibleRegion": [
+				{
+				  "@type": "Country",
+				  "name": "US"
+				},
+				{
+				  "@type": "Country",
+				  "name": "BR"
+				}
+			  ]
+			}
+		},
 		  "track": {
 			"@type": "ItemList",
 			"numberOfItems": 8,
