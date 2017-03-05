@@ -1123,3 +1123,4 @@ body.loading .modal {
 		#footer .icons a {
 			color: #bbb;
 		}
+		#loadOverlay{display: none;}
