@@ -872,8 +872,8 @@ body.loading .modal {
 	}
 
 		.wrapper.style1 {
-			background: #fff;
-			color: #555f66;
+			background: #2e363a;
+			color: #c5c7c8;
 		}
 
 		.wrapper.style2 {
@@ -881,11 +881,11 @@ body.loading .modal {
 			color: #c5c7c8;
 		}
 
-			.wrapper.style2 h2, .wrapper.style2 h3, .wrapper.style2 h4, .wrapper.style2 h5, .wrapper.style2 h6 {
+			.wrapper.style2 h2, .wrapper.style2 h3, .wrapper.style2 h4, .wrapper.style2 h5, .wrapper.style2 h6, .wrapper.style1 h2 {
 				color: #ffffff;
 			}
 
-			.wrapper.style2 header p {
+			.wrapper.style2 header p, .wrapper.style1 header p {
 				color: #a3a5a7;
 			}
 
@@ -1092,8 +1092,9 @@ body.loading .modal {
 /* Footer */
 
 	#footer {
-		background: #f8f8f8;
-		padding: 4em 0 6em 0;
+		background: inherint;
+		text-align: center;
+		position: relative;
 	}
 
 		#footer a {
@@ -1125,4 +1126,3 @@ body.loading .modal {
 		#footer .icons a {
 			color: #bbb;
 		}
-		#loadOverlay{display: none;}
