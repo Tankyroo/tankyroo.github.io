@@ -7,6 +7,66 @@
 <html>
 	<head>
 		<link rel="shortcut icon" href="favicon.ico" />
+		
+				<!--Loader-->
+		<style>
+			/* Center the loader */
+			#loader {
+			  position: relative;
+			  left: 50%;
+			  top: 50%;
+			  z-index: 1;
+			  width: 150px;
+			  height: 150px;
+			  margin: 200px 0 0 -75px;
+			  border: 16px solid #f3f3f3;
+			  border-radius: 50%;
+			  border-top: 16px solid #3498db;
+			  width: 120px;
+			  height: 120px;
+			  -webkit-animation: spin 2s linear infinite;
+			  animation: spin 2s linear infinite;
+			}
+
+			@-webkit-keyframes spin {
+			  0% { -webkit-transform: rotate(0deg); }
+			  100% { -webkit-transform: rotate(360deg); }
+			}
+
+			@keyframes spin {
+			  0% { transform: rotate(0deg); }
+			  100% { transform: rotate(360deg); }
+			}
+
+			/* Add animation to "page content" */
+			.animate-bottom {
+			  position: relative;
+			  -webkit-animation-name: animatebottom;
+			  -webkit-animation-duration: 1s;
+			  animation-name: animatebottom;
+			  animation-duration: 1s
+			}
+
+			@-webkit-keyframes animatebottom {
+			  from { bottom:-100px; opacity:0 } 
+			  to { bottom:0px; opacity:1 }
+			}
+
+			@keyframes animatebottom { 
+			  from{ bottom:-100px; opacity:0 } 
+			  to{ bottom:0; opacity:1 }
+			}
+
+			#myDiv {
+			  display: none;
+			  text-align: center;
+			}
+					#myDiv {
+					  display: none;
+					  text-align: center;
+					}
+		</style>
+		
 		<title>Lords of Noise - Singles</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="Singles by Lords of Noise" />
@@ -33,11 +93,16 @@
 
 		</script>
 	</head>
-	<body id="top">
-
+	<body id="top" onload="myFunction()" style="margin:0;">
+	<div id="loader"></div>
+	<div style="display:none;" id="myDiv" class="animate-bottom">
 		<!-- Header -->
 			<header id="header" class="skel-layers-fixed">
-				<h1><a href="index.html">Lords of Noise</a></h1>
+				<h1><a href="index.html"></a>Lords of Noise |  
+				<a href="https://twitter.com/Lords_of_Noise" class="icon fa-twitter"></a>
+				<a href="https://www.facebook.com/thelordsofnoise/" class="icon fa-facebook"></a>
+				<a href="http://instagram.com/lordsofnoise" class="icon fa-instagram"></a>
+				</h1>
 				<nav id="nav">
 					<ul>
 						<li><a href="index.html" class="button special">Home</a></li>
@@ -46,26 +111,22 @@
 			</header>
 
 		<!-- Main -->
-			<section id="banner" class="wrapper style2">
+			<section id="singlesBanner" class="wrapper style1" image="images/singlesCover.jpg">
 				<header class="major">
-					<h2>Singles By Lords of Noise</h2>
+					<h2>Singles</h2>
 				</header>
-				<div class="major">
+				<div class="inner">
 					<section>
-						<h2>Waitin</h2>
-
-
-						<div class="videoWrapper">
-							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/lqrM8R6qOVQ" frameborder="0" allowfullscreen></iframe>
-						</div>
-
+						<iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A5CaVwc8DdXeoVIU7Ssxhv0" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+						<iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A5Wf3rRZ7XHObteOPontXW2" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+						
 					</section>
-				<a href="https://soundcloud.com/thelordsofnoise/waitin" class="button alt">Listen on Soundcloud</a>
+
 				</div>
 				
 			</section>
-
-			<!-- About -->
+			
+		<!-- About -->
 			<section id="about" class="wrapper style2">
 				<header class="major">
 					<h2>About Us</h2>
@@ -127,7 +188,19 @@
 					
 				</div>
 				
-			</section>
+			</section>	
+	</div>		
+		<script>
+			var myVar;
 
+			function myFunction() {
+				myVar = setTimeout(showPage, 3000);
+			}
+
+			function showPage() {
+			  document.getElementById("loader").style.display = "none";
+			  document.getElementById("myDiv").style.display = "block";
+			}
+		</script>
 	</body>
 </html>
