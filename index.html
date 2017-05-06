@@ -90,106 +90,49 @@
 
 				<!-- Structured data -->
 		<script type="application/ld+json">
-		{
-		  "@context": "http://schema.org",
-		  "@type": "MusicAlbum",
-		  "url": "http://lordsofnoise.com/#listen",
-		  "name": "The Deep End EP",
-		  "description": "The Deep End is the debut EP of Nashville based artists 'Lords of Noise'",
-		  "byArtist": {
-			"@type": "MusicGroup",
-			"name": "Lords of Noise",
-			"url": "http://lordsofnoise.com"
-		  },
-			"potentialAction": {
-					
-			"@type": "ListenAction",
-			"target": [
-			  {
-				"@type": "EntryPoint",
-				"urlTemplate": "http://lordsofnoise.com/#listen",
-				"actionPlatform": [
-				  "http://schema.org/DesktopWebPlatform",
-				  "http://schema.org/IOSPlatform",
-				  "http://schema.org/AndroidPlatform"
-				],
-				"InLanguage": "USD"
-			  },
-			  {
-				"@type": "EntryPoint",
-				"urlTemplate": "android-app://com.example.app/examplescheme/album/Artpop/?autoplay=true",
-				"actionPlatform": "http://schema.org/AndroidPlatform",
-				"InLanguage": "USD"
-			  }
-			],
-			"expectsAcceptanceOf": {
-			  "@type": "Offer",
-			  "eligibleRegion": [
-				{
-				  "@type": "Country",
-				  "name": "US"
-				},
-				{
-				  "@type": "Country",
-				  "name": "BR"
-				}
-			  ]
-			}
-		},
-		  "track": {
-			"@type": "ItemList",
-			"numberOfItems": 8,
-			"itemListElement": [
-			  {
-				"@type": "ListItem",
-				"position": 1,
-				"item": {
-				  "@type": "MusicRecording",
-				  "name": "The Deep End",
-                  "url": "spotify:track:4HtyiSkwIuG2jS6x8dgCjc"
-				}
-			  },
-			  {
-				"@type": "ListItem",
-				"position": 2,
-				"item": {
-				  "@type": "MusicRecording",
-				  "name": "Wavin",
-                  "url": "https://open.spotify.com/track/3PcIMLbFV76TtOpTCQSVwh"
-				}
-			  },
-			  {
-				"@type": "ListItem",
-				"position": 3,
-				"item": {
-				  "@type": "MusicRecording",
-				  "name": "Soaked to the Bone",
-                  "url": "https://open.spotify.com/track/3WGL9cSbibLlHiqjiawRxO"
-				}
-			  },
-			  {
-				"@type": "ListItem",
-				"position": 4,
-				"item": {
-					"@type": "MusicRecording",
-					"name": "Supernatural",
-                    "url": "https://open.spotify.com/track/7bEInqZetKzOwKr5itvILM"
-                    }
-				},
-				{
-				"@type": "ListItem",
-				"position": 5,
-				"item": {
-					"@type": "MusicRecording",
-					"name": "Red Sky",
-                    "url": "https://open.spotify.com/track/3MTZ3UNie3SAZcb0Yfbm4W"
-				}
-				}
-			  
-			]
-		  }
-		}
-		</script>		
+{
+  "@context": "http://schema.org",
+  "@type": "MusicGroup",
+  "url": "http://lordsofnoise.com",
+  "name": "Lords of Noise",
+  "sameAs": "http://www.lordsofnoise.com",
+  "description": "Lords of Noise is a collaboration project between rapper Lord Luud and produer Default Noise.",
+  "potentialAction": {
+    "@type": "ListenAction",
+    "target": [
+      {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://open.spotify.com/artist/6wfdJ8F54BQefuEMcsPc4T",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/IOSPlatform",
+          "http://schema.org/AndroidPlatform"
+        ],
+        "InLanguage": "USD"
+      },
+      {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://open.spotify.com/artist/6wfdJ8F54BQefuEMcsPc4T",
+        "actionPlatform": "http://schema.org/AndroidPlatform",
+        "InLanguage": "USD"
+      }
+    ],
+    "expectsAcceptanceOf": {
+      "@type": "Offer",
+      "eligibleRegion": [
+        {
+          "@type": "Country",
+          "name": "US"
+        },
+        {
+          "@type": "Country",
+          "name": "BR"
+        }
+      ]
+    }
+  }
+}
+</script>	
 		<!-- Google Analytics -->
 		<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
