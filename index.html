@@ -177,7 +177,7 @@
 						<!--<li><a href="http://blog.lordsofnoise.com" class="button alt">Blog</a></li>	-->
 						<li><a href="singles.html" class="button alt">Singles</a></li>		
 						<li><a href="about.html" class="button alt">About Us</a></li>
-						<li><a href="#listen" class="button special">Listen Now</a></li>
+						<li><a id="listenNowHeader" class="button special">Listen Now</a></li>
 						<li><a href="#purchase" class="button alt">Buy The Deep End</a></li>
 						
 
@@ -194,8 +194,29 @@
 					<p>Debut EP "The Deep End" out now across all major streaming platforms.</p>
 					<br>
 					<ul class="actions">
-						<li><a href="#listen" class="button big special">Listen Now</a></li>
-						</ul>
+						<li><a id="listenNow" class="button big special">Listen Now</a></li>
+						</ul>				
+						
+						<div id="myModal" class="modal">
+
+						  <!-- Modal content -->
+						  <div class="modal-content">
+							<span class="close">&times;</span>
+							<!-- Lightbox content -->
+							<p>Stream on Spotify:</p>
+						<iframe src="https://open.spotify.com/embed/album/6fk1ag4wIO5l2KmUqrgD7s" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+						<ul class="actions">
+									<li><a href="https://itunes.apple.com/us/album/the-deep-end-ep/id1208683808?uo=4&app=itunes&at=1001lry3&ct=dashboard">iTunes</a></li>
+									<li><a href="https://www.youtube.com/watch?v=87iNn7v4yxI&list=PLRK-QKKc2KgPRB1E5qgc2eXU2i00cspWG">Youtube</a></li>
+									<li><a href="https://lordsofnoise.bandcamp.com/album/the-deep-end-ep">Bandcamp</a></li>
+									
+									<li><a href="https://itunes.apple.com/us/album/the-deep-end-ep/id1208683808?uo=4&app=music&at=1001lry3&ct=dashboard">Apple Music</a></li>
+									<li><a href="https://soundcloud.com/thelordsofnoise/sets/the-deep-end-ep">Soundcloud</a></li>
+									<li><a href="https://play.google.com/store/music/album/Lords_of_Noise_The_Deep_End_EP?id=Bfwos2o7wnuat5dbu6spztmcsci">Google Play</a></li>
+								</ul>
+						  </div>
+
+						</div>
 				</div>
 				
 				<div class="row">
@@ -231,37 +252,6 @@
 				
 			</section>
 			
-		<!-- Two -->
-			<section id="listen" class="wrapper style2">
-				<header class="major">
-					<h2>Streaming Options</h2>
-					<br>
-					
-					
-				</header>
-				<div class="container"> 
-					<div class="row">
-							<section class="special">
-								<ul class="actions">
-									<li><a href="https://open.spotify.com/album/6fk1ag4wIO5l2KmUqrgD7s" class="button alt">Spotify</a></li>
-									<li><a href="https://itunes.apple.com/us/album/the-deep-end-ep/id1208683808?uo=4&app=itunes&at=1001lry3&ct=dashboard" class="button alt">iTunes</a></li>
-									<li><a href="https://www.youtube.com/watch?v=87iNn7v4yxI&list=PLRK-QKKc2KgPRB1E5qgc2eXU2i00cspWG" class="button alt">Youtube</a></li>
-									<li><a href="https://lordsofnoise.bandcamp.com/album/the-deep-end-ep" class="button alt">Bandcamp</a></li>
-									
-									<li><a href="https://itunes.apple.com/us/album/the-deep-end-ep/id1208683808?uo=4&app=music&at=1001lry3&ct=dashboard" class="button alt">Apple Music</a></li>
-									<li><a href="https://soundcloud.com/thelordsofnoise/sets/the-deep-end-ep" class="button alt">Soundcloud</a></li>
-									<li><a href="https://play.google.com/store/music/album/Lords_of_Noise_The_Deep_End_EP?id=Bfwos2o7wnuat5dbu6spztmcsci" class="button alt">Google Play</a></li>
-								</ul>
-							</section>
-
-
-						
-					</div>
-					
-				</div>
-				
-			</section>
-					
 			
 		<!-- About -->
 			<!--<section id="about" class="wrapper style2">
@@ -278,18 +268,6 @@
 			</section>	-->		
 		<!-- Footer -->
 		
-			<section id="purchase" class="wrapper style2">
-				<header class="major">
-					<h2>Purchase The Deep End EP</h2>
-					<p>You can purchase The Deep End EP at one of these fine retailers.</p>
-					<ul class="actions">
-								<li><a href="http://www.amazon.com/gp/product/B06X9G65KT" class="button alt">Amazon</a></li>
-								<li><a href="https://play.google.com/store/music/album/Lords_of_Noise_The_Deep_End_EP?id=Bfwos2o7wnuat5dbu6spztmcsci" class="button alt">Google Play</a></li>
-								<li><a href="https://itunes.apple.com/us/album/the-deep-end-ep/id1208683808?uo=4&app=itunes&at=1001lry3&ct=dashboard" class="button alt">iTunes</a></li>
-					</ul>
-				</header>
-				
-			</section>
 	</div>
 		<script>
 			var myVar;
@@ -301,6 +279,38 @@
 			function showPage() {
 			  document.getElementById("loader").style.display = "none";
 			  document.getElementById("myDiv").style.display = "block";
+			}
+		</script>
+		
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("listenNow");
+			var btn2 = document.getElementById("listenNowHeader");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks the button, open the modal 
+			btn.onclick = function() {
+				modal.style.display = "block";
+			}
+			btn2.onclick = function() {
+				modal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+				modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
 			}
 		</script>
 
