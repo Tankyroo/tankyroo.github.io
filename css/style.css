@@ -11,6 +11,7 @@
 /* Basic */
 
 	body {
+		background-color: rgba(0,0,0,0.7);
 		background: #fff;
 	}
 
@@ -917,7 +918,7 @@ body.loading .modal {
 	}
 
 	#header {
-		background: #fff;
+		background: #FFF;
 		color: #555f66;
 		cursor: default;
 		height: 3em;
@@ -1019,7 +1020,8 @@ body.loading .modal {
 	margin: auto;
 }
 	#banner {
-		background: #192024 url("../images/bannergrad.jpg") 0 0 no-repeat;
+
+		background: url("../images/bannerdark.jpg") 0 0 no-repeat;
 		background-size: cover;
 		background-position: center center;
 		background-repeat: no-repeat;
