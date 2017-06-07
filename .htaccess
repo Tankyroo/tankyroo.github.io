@@ -1,5 +1,4 @@
-#Alternate default index page
-DirectoryIndex landing.html
+DirectoryIndex landing.html index.html
 
 RewriteEngine on 
 RewriteCond %{REQUEST_FILENAME} !-d 
